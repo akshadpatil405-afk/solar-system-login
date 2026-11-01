@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+  <div class="signup-card">
+    <div class="logo">✦</div>
+    <h1>Create Account</h1>
+    <p>Begin your cosmic journey</p>
+
+    <form id="signupForm">
+      <input id="fullName" type="text" placeholder="Full Name" required>
+      <input id="signupEmail" type="email" placeholder="Email Address" required>
+      <input id="signupPassword" type="password" placeholder="Create Password" minlength="6" required>
+
+      <button type="submit">CREATE ACCOUNT</button>
+    </form>
+
+    <p id="signupMessage"></p>
+
+    <p class="back">
+      Already have an account?
+      <a href="index.html">Login</a>
+    </p>
+  </div>
+
+  <script type="module" src="js/signup.js"></script>
+</body>
+</html>

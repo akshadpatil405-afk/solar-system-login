@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmic Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="space">
+    <div class="stars"></div>
+    <div class="sun"></div>
+
+    <div class="orbit orbit-one">
+      <div class="planet mercury"></div>
+    </div>
+
+    <div class="orbit orbit-two">
+      <div class="planet venus"></div>
+    </div>
+
+    <div class="orbit orbit-three">
+      <div class="planet earth"></div>
+    </div>
+
+    <div class="orbit orbit-four">
+      <div class="planet mars"></div>
+    </div>
+
+    <div class="orbit orbit-five">
+      <div class="planet jupiter"></div>
+    </div>
+  </div>
+
+  <main class="login-container">
+    <section class="login-card">
+
+      <div class="logo">✦</div>
+      <h1>Welcome Back</h1>
+      <p class="subtitle">Explore your universe</p>
+
+      <form id="loginForm">
+        <input
+          type="email"
+          id="loginEmail"
+          placeholder="Username or Email"
+          autocomplete="username"
+          required
+        >
+
+        <div class="password-box">
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Password"
+            autocomplete="current-password"
+            required
+          >
+          <button type="button" id="togglePassword">Show</button>
+        </div>
+
+        <button class="login-btn" type="submit">
+          LOGIN
+        </button>
+      </form>
+
+      <div class="separator">OR</div>
+
+      <button class="google-btn" id="googleLogin">
+        <img src="assets/google-icon.svg" alt="Google">
+        Sign up with Google
+      </button>
+
+      <p class="signup-text">
+        Don't have an account?
+        <a href="signup.html">Create Account</a>
+      </p>
+
+      <p id="message" class="message"></p>
+
+    </section>
+  </main>
+
+  <script type="module" src="js/login.js"></script>
+</body>
+</html>
